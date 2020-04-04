@@ -1,0 +1,20 @@
+@import "./styles/iconfont.wxss";
+
+/* 在微信小程序中通配符‘*’不在适用   */
+page,view,text,swiper,swiper-item,image,navigator{
+  padding:0;
+  margin:0;
+  /* 怪异盒模型中的width包括content+padding+border */
+  box-sizing:border-box;
+}
+
+/* 主题颜色，通过变量来实现 */
+page{
+  /* 定义主题颜色 */
+  --themeColor:#2C77E5; 
+  /* 统一字体大小 假设原稿大小是375px 1px=2rpx 所以14px=28rpx */
+  font-size: 28rpx;
+}
+image{
+  width:100%;
+}
